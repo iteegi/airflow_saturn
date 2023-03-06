@@ -11,7 +11,7 @@ from airflow.operators.python import PythonOperator
 
 dag = DAG(
     dag_id="1_templated_query",
-    schedule_interval="@daily",
+    schedule_interval=None,
     start_date=dt.datetime(year=2023, month=3, day=1),
     end_date=dt.datetime(year=2023, month=3, day=15),
 )
